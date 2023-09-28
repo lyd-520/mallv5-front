@@ -5,7 +5,7 @@ import Index from './pages/newIndex'
 Vue.use(Router);
 
 export default new Router({
-  // base:'mallv5-front',
+  // base:'/mallv5-front/',
   routes:[
     {
       path:'/',
@@ -31,7 +31,7 @@ export default new Router({
           name: 'detail',
           component: () => import('./pages/detail.vue')
         }, {
-          path: '/secKillDetail/:id/:flashPromotionId',
+          path: '/secKillDetail/:id/:flashPromotionId/:flashRelationId',
           name: 'secKillDetail',
           component: () => import('./pages/secKillDetail.vue')
         }, {

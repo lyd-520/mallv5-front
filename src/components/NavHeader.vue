@@ -17,7 +17,7 @@
     <div class="nav-header">
       <div class="container">
         <div class="header-logo">
-          <a href="/#/index" ></a>
+          <a href="/#/index" >首页</a>
         </div>
          
         <div class="header-search">

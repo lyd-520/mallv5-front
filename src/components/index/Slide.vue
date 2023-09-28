@@ -7,7 +7,7 @@
       :key="index"
       :style="{'border-top-color': item.topColor}">
 <!--        <a :href="'http://'+item.url">-->
-        <a :href="'/#/secKillDetail/'+item.id+'/'+item.flashPromotionId">
+        <a :href="'/#/secKillDetail/'+item.id+'/'+item.flashPromotionId+'/'+item.flashRelationId">
 <!--        <a>-->
           <img v-lazy="item.src" :alt="item.value">
           <h3 class="name ellipsis">{{item.value}}</h3>

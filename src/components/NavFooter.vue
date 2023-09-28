@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div class="footer-logo">
-      <img src="/imgs/logo-footer.png" alt="">
+      <img src="/resource/imgs/logo-footer.png" alt="">
       <p>mallv5</p>
     </div>
 <!--    <div class="footer-link">-->

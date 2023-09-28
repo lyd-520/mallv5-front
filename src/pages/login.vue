@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <div class="container">
-      <a href="/#/index"><img src="/imgs/login-logo.png" alt=""></a>
+      <a href="/#/index"><img src="/resource/imgs/login-logo.png" alt="">返回首页</a>
     </div>
     <div class="wrapper">
       <div class="container">
@@ -133,7 +133,7 @@ export default {
     }
   }
   .wrapper{
-    background:url('/imgs/login-bg.jpg') no-repeat center;
+    background:url('/resource/imgs/login-bg.jpg') no-repeat center;
     .container{
       height:576px;
       .login-form{

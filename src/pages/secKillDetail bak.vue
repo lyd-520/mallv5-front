@@ -40,7 +40,7 @@
       <div class="container">
         <h2>价格说明</h2>
         <div class="desc">
-          <img src="/imgs/detail/item-price.jpeg" alt="">
+          <img src="/resource/imgs/detail/item-price.jpeg" alt="">
         </div>
       </div>
     </div>

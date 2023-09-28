@@ -1,9 +1,9 @@
 
 require('events').EventEmitter.defaultMaxListeners = 20; // 将MaxListeners的限制数增加到20
 module.exports = {
-    // publicPath: process.env.NODE_ENV ==="development"? "mallv5-front" : "/",
     outputDir: 'dist',
-    assetsDir: 'static',
+    assetsDir: 'static_front',
+    // publicPath: '/mallv5-front',
   devServer:{
     host:'0.0.0.0',
     port:8080,
@@ -25,6 +25,10 @@ module.exports = {
             changeOrigin:true,
         }
         ,
+        '/cache/*':{
+            target:'http://127.0.0.1:8880',
+            changeOrigin:true,
+        },
         '/cart/*':{
             target:' http://127.0.0.1:8880',
             changeOrigin:true,
@@ -64,7 +68,8 @@ module.exports = {
             pathRewrite:{
               '/es':''
             }
-        }
+        },
+
     }
   },
   // publicPath:'/app',

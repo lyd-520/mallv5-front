@@ -86,7 +86,7 @@
             infinite-scroll-distance="410"
             v-if="false"
           >
-            <img src="/imgs/loading-svg/loading-spinning-bubbles.svg" alt="" v-show="loading">
+            <img src="/resource/imgs/loading-svg/loading-spinning-bubbles.svg" alt="" v-show="loading">
           </div>
           <no-data v-if="!loading && list.length==0"></no-data>
         </div>

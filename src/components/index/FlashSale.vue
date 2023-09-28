@@ -15,7 +15,7 @@
     <div class="box-sale">
       <div class="sale-count-down">
         <div class="sale-round">{{round}} 场</div>
-        <img src="/imgs/flash.jpg" alt="小米闪购">
+        <img src="/resource/imgs/flash.jpg" alt="小米闪购">
         <div class="time-left">距离结束还有</div>
         <div class="count-down">
           <span>{{hour}}</span>
@@ -126,6 +126,7 @@ export default {
             topColor:topColor[i-(5*parseInt(i/5))],
             src:flash.pic,
             flashPromotionId: flash.flashPromotionId,
+            flashRelationId: flash.relationId
             // url:flash.secKillServer
           } 
       })

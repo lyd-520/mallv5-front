@@ -64,13 +64,13 @@
                   更多
                   <i
                     style="
-                      background: url('/imgs/so/search.ele.png') no-repeat 3px
+                      background: url('/resource/imgs/so/search.ele.png') no-repeat 3px
                         7px;
                     "
                   ></i>
                   <b
                     style="
-                      background: url('/imgs/so/search.ele.png') no-repeat 3px -44px;
+                      background: url('/resource/imgs/so/search.ele.png') no-repeat 3px -44px;
                     "
                   ></b>
                 </a>

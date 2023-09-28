@@ -9,6 +9,7 @@ import { Message,Loading,Autocomplete} from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import store from './store'
 import App from './App.vue'
+import JSONBIG from "json-bigint";
 // import vuexEsm from "vuex";
 
 // import env from './env'
@@ -20,7 +21,11 @@ if(mock){
 
 //aios.defaults.baseURL = '/api';
 axios.defaults.timeout = 8000; 
-
+axios.defaults.transformResponse=[data=>{
+    //data是原始字符串数据
+    const jsonObject = JSONBIG.parse(data)
+    return jsonObject }]
+;
 // 根据环境变量获取不同的请求地址
 
 function getCookie(c_name){

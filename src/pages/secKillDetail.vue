@@ -60,7 +60,7 @@
                     <em>库存数量=></em>
                   </span>
                   <span>
-                    {{product.stock}}件
+                    {{stock}}件
 <!--                   <input type="text" readonly :value="product.stock">-->
                   </span>
           </div>
@@ -117,9 +117,11 @@ export default {
     return {
       id: this.$route.params.id, //获取商品ID
       flashPromotionId: this.$route.params.flashPromotionId,
+      flashRelationId: this.$route.params.flashRelationId,
       err: "",
       version: 1, //商品版本切换
-      product: {}, //商品信息
+      product: null, //商品信息
+      stock: 0,
       swiperOption: {
         autoplay: true,
         pagination: {
@@ -144,6 +146,7 @@ export default {
     ServiceBar,
   },
   mounted() {
+    this.getCacheStock();
     this.getProductInfo();
     this.getVerifyCodeInfo();
   },
@@ -164,6 +167,12 @@ export default {
 
         this.serviceIds = res.serviceIds.split(",");
       });
+    },
+    getCacheStock(){
+       this.axios.get('/cache/stock?productId='+this.id+'&flashRelationId='+this.flashRelationId).then(
+          res => {if(res!=null){
+            this.stock= res}}
+       )
     },
     secKill(){
       //开始验证-验证码

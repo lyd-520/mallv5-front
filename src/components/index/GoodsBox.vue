@@ -55,7 +55,7 @@
                   <h3 class="name">浏览更多</h3>
                   <span class="desc">{{selectItem.value}}</span>
                 </div>
-                <img src="/assets/image/right.png">
+                <img src="/resource/image/right.png">
               </a>
             </div>
             <div class="goods-item-bg" :key="index" v-if="index === goodsData.length - 1 && goodsData.length % 2 !== 0">
@@ -74,7 +74,7 @@
                   <h3 class="name">浏览更多</h3>
                   <span class="desc">{{selectItem.value}}</span>
                 </div>
-                <img src="/assets/image/right.png">
+                <img src="/resource/image/right.png">
               </a>
             </div>
             <div class="goods-item brick-item" :key="index" v-if="index < goodsData.length - 1">

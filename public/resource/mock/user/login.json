@@ -1,0 +1,12 @@
+{
+  "status": 0,
+  "data": {
+    "id": 0,
+    "username": null,
+    "email": null,
+    "phone": null,
+    "role": 0,
+    "createTime": null,
+    "updateTime": null,
+  }
+}

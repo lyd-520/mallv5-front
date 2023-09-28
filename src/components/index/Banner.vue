@@ -80,11 +80,11 @@ export default {
     z-index: 5;
     cursor: pointer;
     outline: none;
-    background: url(/imgs/icon-slides.png) no-repeat -84px 50%;
+    background: url(/resource/imgs/icon-slides.png) no-repeat -84px 50%;
     left: 234px;
     right: auto;
     &:hover {
-      background: url(/imgs/icon-slides.png) no-repeat 0px 50%;
+      background: url(/resource/imgs/icon-slides.png) no-repeat 0px 50%;
     }
   }
 
@@ -97,11 +97,11 @@ export default {
     z-index: 5;
     cursor: pointer;
     outline: none;
-    background: url(/imgs/icon-slides.png) no-repeat -125px 50%;
+    background: url(/resource/imgs/icon-slides.png) no-repeat -125px 50%;
     right: 0;
     left: auto;
     &:hover {
-      background: url(/imgs/icon-slides.png) no-repeat -43px 50%;
+      background: url(/resource/imgs/icon-slides.png) no-repeat -43px 50%;
     }
   }
 
