@@ -30,3 +30,10 @@ cnpm install
 ```
 cnpm run serve
 ```
+
+### 说明
+
+课上的跨域项目位置(前端工程目录下面的资料目录):
+```
+http://git.tulingxueyuan.cn/java-vip/tulingmall-front/src/master/%e8%b5%84%e6%96%99
+```
